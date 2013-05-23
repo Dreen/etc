@@ -1,4 +1,8 @@
 <?php
+/**
+ * Misc utility functions
+ */
+
 
 /**
  * Getting variables from URL string
