@@ -18,7 +18,7 @@ alias gerpOld='grep -riHnT . -e'
 alias gerp="find . -type f | perl -lne 'print if -T;' | xargs egrep -riHnT"
 
 # ubuntu specific
-alias update='sudo apt-get -y update; apt-get -y upgrade'
+alias update='sudo apt-get -y update && sudo apt-get -y upgrade'
 alias add='sudo apt-get -y install'
 alias drop='sudo apt-get -y purge && apt-get -y autoremove'
 alias search='sudo apt-cache search'
