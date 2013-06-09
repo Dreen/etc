@@ -14,8 +14,9 @@ alias o='gnome-open'
 
 alias proc='ps -ef | grep'
 
-alias gerpOld='grep -riHnT . -e'
-alias gerp="find . -type f | perl -lne 'print if -T;' | xargs egrep -riHnT"
+#alias gerp='grep -riHnT . -e'
+#alias gerp="find . -type f | perl -lne 'print if -T;' | xargs egrep -riHnT"
+alias gerp='ack-grep'
 
 # ubuntu specific
 alias update='sudo apt-get -y update && sudo apt-get -y upgrade'
