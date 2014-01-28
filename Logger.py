@@ -18,7 +18,7 @@ class Logger(object):
 				mode = 'a'
 			else:
 				mode = 'w'
-			self.log = open(filename, "w")
+			self.log = open(filename, mode)
 			self.closed = self.log.closed
 		self.timestamped = timestamped
 		self.levels = levels
