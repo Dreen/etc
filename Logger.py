@@ -57,7 +57,7 @@ class Logger(object):
 			
 			if self.levels is not False and isinstance(self.levels, dict) and level in self.levels.keys():
 				self.log.write(timestamp + self.levels[level] + msg[0] + "\n")
-			elif (self.levels is not False and isinstance(self.levels, list) and level in self.levels) or self.levels is False:
+			else:
 				self.log.write(timestamp + msg[0] + "\n")
 			
 			self.log.flush()
