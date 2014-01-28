@@ -43,11 +43,8 @@ class Logger(object):
 		except UnicodeDecodeError:
 			msg = msg.strip().split('\n')
 
-		if level is not None and self.levels is not None:
-			if isinstance(self.levels, dict) and level not in self.levels.keys():
-				return
-			elif isinstance(self.levels, list) and level not in self.levels():
-				return
+		if level is not None and self.levels is not None and level not in self.levels:
+			return
 		
 		if len(msg) > 1:
 			for m in msg:
