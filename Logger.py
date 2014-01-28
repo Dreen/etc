@@ -21,10 +21,7 @@ class Logger(object):
 			self.log = open(filename, "w")
 			self.closed = self.log.closed
 		self.timestamped = timestamped
-		if levels is not None:
-			self.levels = levels
-		else:
-			self.levels = False
+		self.levels = levels
 	
 	# if the class was initialised with a null filename, the logs are being written to a buffer. this function moves the buffer into a real file.
 	def realize(self, filename):
