@@ -22,7 +22,7 @@ function parse_git_branch {
 # \[\e[1;36m\]  start bold cyan
 # $(parse_git_branch)   current git branch
 # $
-# )\[\e[m\]     stop cyan
+# \[\e[m\]      stop cyan
 # >
 export PS1='\n\[\e[0;32m\]\u\[\e[m\]:\[\e[1;34m\]\w\[\e[m\]\[\e[1;36m\]$(parse_git_branch)\[\e[m\]$> '
 
