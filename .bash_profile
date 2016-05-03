@@ -40,11 +40,16 @@ alias xs='cd `pwd -P`'
 alias o='gnome-open'
 
 alias proc='ps -ef | grep'
+alias lsport='sudo lsof -i -n -P | grep'
 
 #alias gerp='grep -riHnT . -e'
 #alias gerp="find . -type f | perl -lne 'print if -T;' | xargs egrep -riHnT"
 #alias gerp='ack-grep'
 alias aga='ag -a --depth -1'
+
+alias rmPyCrap="find . -name \*.pyc -delete && find . -type d -name __pycache__ -delete"
+alias clean_git='git branch --merged master | grep -v master | grep -v '^\*' | xargs git branch -d'
+alias pysrv='python -m SimpleHTTPServer'
 
 # ubuntu specific
 alias update='sudo apt-get -y update && sudo apt-get -y upgrade'
